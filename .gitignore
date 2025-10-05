@@ -1,0 +1,51 @@
+# Railsプロジェクト用の標準的な .gitignore
+
+# --------------------
+# 必須の無視対象
+# --------------------
+
+# ローカル環境の機密情報（データベース認証情報など）
+/config/master.key
+/config/credentials.yml.enc
+# config/database.yml のローカル設定ファイル
+/config/database.yml
+
+# 一時ファイルおよびログファイル
+/tmp
+/log
+/storage/*
+!/storage/.keep
+/node_modules
+
+# プロセスIDファイル
+/pids/*.pid
+/pids/*.sock
+
+# キャッシュやセッションデータ
+/vendor/bundle
+/public/assets
+/public/packs
+/public/cache
+/public/uploads
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# 開発環境で生成されるアセット（Rails 6以降のWebpack/JS関連）
+/public/packs-test
+/public/vite
+/public/vite-test
+/public/channels
+/public/serviceworker.js
+
+# --------------------
+# macOS固有の無視対象
+# --------------------
+.DS_Store
+
+# --------------------
+# OS固有のゴミ箱ファイル
+# --------------------
+# Windows
+Thumbs.db
+# Linux
+*~
