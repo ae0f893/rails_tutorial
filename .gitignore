@@ -7,8 +7,6 @@
 # ローカル環境の機密情報（データベース認証情報など）
 /config/master.key
 /config/credentials.yml.enc
-# config/database.yml のローカル設定ファイル
-/config/database.yml
 
 # 一時ファイルおよびログファイル
 /tmp
