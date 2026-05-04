@@ -81,6 +81,12 @@ p {
   }
 }
 
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
+}
+
 /* footer */
 
 footer {
@@ -93,15 +99,33 @@ footer {
     &:hover {
       color: $gray-darker;
     }
-    small {
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
       float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
     }
     ul {
-      float: right;
-      list-style: none;
+      float: none;
+      padding: 0;
       li {
-        float: left;
-        margin-left: 15px;
+        float: none;
+        margin-left: 0;
       }
     }
   }
