@@ -25,7 +25,7 @@
 /public/packs
 /public/cache
 /public/uploads
-/db/*.sqlite3
+/db/*.sqlite3*
 /db/*.sqlite3-journal
 
 # 開発環境で生成されるアセット（Rails 6以降のWebpack/JS関連）
